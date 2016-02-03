@@ -1,0 +1,161 @@
+/* Empty. Add your own CSS if you like */
+
+.bottom-buttons-position {
+    position: relative;
+    margin-top: 120%;
+}
+.large-icon {
+    font-size: 100px;
+}
+
+.medium-icon {
+    font-size: 64px;
+}
+
+.small-icon {
+    font-size: 32px;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.pad-left {
+    padding-left: 10%;
+}
+
+.pad-right {
+    padding-right: 10%;
+}
+
+.clear-both {
+    clear: both;
+}
+
+.h-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.browse-card{
+    height: 250px;
+}
+
+.teal-background{
+    background-color: #278481 !important;
+}
+
+.teal-object{
+    color: #278481 !important;
+}
+
+.white-text {
+    color: #ffffff;
+}
+
+.teal-border {
+    border-style: solid !important;
+    border-color: #278481 !important;
+}
+
+/* Card styling */
+
+td-cards {
+    display: block;
+}
+
+td-card {
+    position: absolute;
+    left: 50%;
+    margin: 60px 0 40px -152.5px;
+    width: 95%;
+    height: 85%;
+    border: 1px solid #999;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    background-color: rgb(255,255,255);
+}
+
+.td-card .title {
+    font-size: 15px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.td-card .price {
+    font-size: 15px;
+    padding: 10px;
+    font-weight: bold;
+    float: right;
+}
+
+.td-card .description {
+    font-size: 15px;
+    padding: 10px;
+}
+
+td-card .image {
+    /* position: absolute;
+    bottom: 40; */
+    width: 95%;
+    margin-top: 10px;
+}
+
+td-card img {
+   height: 300px;
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* Overlay styling*/
+
+.overlayBox {
+    position: absolute;
+    left: 50%;
+    height: 98%;
+    width: 100%;
+    top: -80px;
+    opacity: 0;
+    margin: 80px 0 0 -149px;
+}
+
+.boxed {
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 30px;
+}
+
+.yes-text {
+    background-color: rgba(0,256,0,0.2);
+}
+
+.yesBox {
+    margin: 10% 60% 0% 10%;
+    border: 2px solid #00FF00;
+    color: rgb(0, 256, 0);
+    -webkit-transform: rotate(-25deg);
+}
+
+.no-text {
+    background-color: rgba(256,0,0,0.2);
+}
+
+.noBox {
+    margin: 10% 10% 0% 60%;
+    border: 2px solid #FF0000;
+    color: rgb(256, 0, 0);
+    -webkit-transform: rotate(25deg);
+}
+
+.fade {
+    -webkit-transition: 0.2s opacity linear;
+    transition: 0.2s opacity linear;
+    opacity: 0;
+}

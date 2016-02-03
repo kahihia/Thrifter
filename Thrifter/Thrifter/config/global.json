@@ -1,0 +1,14 @@
+{
+  "global": {
+    "parseVersion": "1.5.0"
+  },
+  "applications": {
+    "Thrifter": {
+      "applicationId": "PCm0kDVeThvRcdFuS9lITrmskEhqjbqwFAydL2Lr",
+      "masterKey": "4Sjn3iBwlNE6ly0ZbKZxUY7SnocVccmhgREvwi1T"
+    },
+    "_default": {
+      "link": "Thrifter"
+    }
+  }
+}

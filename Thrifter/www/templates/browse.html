@@ -1,0 +1,26 @@
+<ion-view view-title="Thrifter">
+        <div ng-controller="CardsCtrl">
+        <td-cards>
+            <td-card id="td-card" ng-repeat="card in cards | limitTo:quantity" on-destroy="cardDestroyed($index)" on-swipe-left="cardSwipedLeft($index)" on-swipe-right="cardSwipedRight($index)" on-partial-swipe="cardPartialSwipe(amt)">
+                <div class="image h-center">
+                    <div class="no-text overlayBox"><div class="noBox boxed">Trash</div></div>
+                   <img ng-src="{{card.listingImage.url}}">
+                    <div class="yes-text overlayBox"><div class="yesBox boxed" id="centerMe">Save</div></div>
+                </div>
+               <div class="price">
+                    {{card.listingPrice}}
+                </div>
+                <div class="title">
+                   {{card.listingTitle}}
+                </div>
+                <div class="description">
+                    <script> </script>
+                    {{card.listingDetails}}
+                    user {{userLatitude}}
+                    listing {{card.listingLatitude}}
+                    combined {{userLatitude + card.listingLatitude }}
+                </div>
+            </td-card>
+        </td-cards>
+        </div>
+</ion-view>

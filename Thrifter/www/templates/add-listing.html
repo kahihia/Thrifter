@@ -1,0 +1,31 @@
+<ion-view view-title="Add Listing">
+    <ion-content ng-controller="imageSubmissionCtrl">
+            <div class="list list-inset" >
+            <label class="item item-input item-stacked-label">
+            <span class="input-label">Title</span>
+            <input type="text" placeholder="What are you selling?" name="listingTitle" maxlength="25" ng-model="listing.listingTitle" required>
+            </label>
+
+            <label class="item item-input item-stacked-label">
+            <span class="input-label">Price</span>
+            <input type="number" placeholder="How much do you want for it?" name="listingPrice" id="listingPrice" maxlength="8" ng-model="listing.listingPrice" required>
+            </label>
+
+            <label class="item item-input item-stacked-label">
+            <span class="input-label">Description</span>
+            <input type="text" placeholder="What are the details?" name="listingDetails" id="listingDetails" maxlength="128" ng-model="listing.listingDetails">
+            </label>
+            </div>
+        <div class="card">
+            <button class="button button-block small-icon button-clear teal-object h-center ion-camera" ng-click="takePicture(); getLocation()">
+                Add Photo</button>
+            <!-- <img ng-src="{{imgURI}}" style="max-width: 100%"> -->
+            {{latListing}}{{longListing}}
+        </div>
+            <ion-button class="button button-block button-large teal-object" ng-click="createImage()">
+                Submit Listing
+            </ion-button>
+
+
+    </ion-content>
+</ion-view>
